@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,14 +12,63 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* UTILS */
+
+.btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-fill {
+  background-color: rgb(17, 139, 247);
+  color: white;
+  border: 2px solid rgb(17, 139, 247);
+}
+
+.btn-empty {
+  background-color:white;
+  color: rgb(213, 228, 241);
+  border: 2px solid rgb(213, 228, 241);
+}
+
+
+.tag {
+  color: white;
+  border-radius: 10px;
+  padding: 4px 9px;
+  font-size: 9px;
+}
+
+.goals {
+  background-color: rgb(174, 17, 247);
+}
+.recruiting {
+  background-color: rgb(35, 190, 131);
+}
+.mobile {
+  background-color: rgb(247, 147, 17);
+}
+.website {
+  background-color: rgb(238, 63, 145);
+}
+.sales {
+  background-color: rgb(175, 212, 88);
+}
+.editorial {
+  background-color: rgb(17, 139, 247);
+}
+
+/* HEADER */
+
 header {
+  height: 70px;
   background-color: white;
   padding: 10px 20px;
 }
 
-.logo {
-  height: 40px;
-  width: auto;
+#logo {
   vertical-align: middle;
 }
 
@@ -26,3 +77,77 @@ header {
   font-size: 30px;
   vertical-align: middle;
 }
+
+/* MAIN */
+
+.conteiner {
+  width: 70%;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.conteiner .top{
+  padding: 15px 50px;
+  border-bottom: 2px solid rgb(213, 228, 241);
+}
+
+.conteiner .bottom{
+  padding: 40px 50px;
+}
+
+.conteiner .bottom li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+/* list */
+
+.conteiner .bottom li h3::before {
+  content: '\23F7';
+}
+
+.circle::before {
+  display: inline-block;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+ }
+
+.second-level-list li .checked::before {
+  content: '\2713';
+  color: rgb(12, 177, 155);
+  border: 1px solid rgb(12, 177, 155);
+}
+
+.second-level-list li .delete::before {
+  content: '\2717';
+  color: rgb(194, 11, 139);
+  border: 1px solid rgb(194, 11, 139);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
